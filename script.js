@@ -114,29 +114,36 @@ function showLatestPost(data) {
 
     cardDiv.innerHTML = ` <figure class="px-10 pt-10">
     <img
-      src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-      alt="Shoes"
+      src="${postCard.cover_image}"
+      alt=""
       class="rounded-xl"
     />
   </figure>
   <div class="card-body">
     <p class="flex gap-2 text-[#12132D99]">
-      <img src="./images/Frame (1).png" alt="" /> 29 January 2024
+      <img src="./images/Frame (1).png" alt="" /> ${
+        postCard.author.posted_date || "No publish date"
+      }
     </p>
     <h2 class="card-title text-[#12132D] text-lg font-extrabold">
-      What will a mars habitat force that impact in our daily life!!!
+   ${postCard.title}
     </h2>
     <p class="text-[#12132D99]">
-      Yes, you can run unit tests and view the results directly within
-      the app.
+ ${postCard.description}
     </p>
     <div class="flex gap-2">
-      <div><img src="./images/Ellipse 1.png" alt="" /></div>
+      <div class='w-12 h-12 rounded-full overflow-hidden'><img src="${
+        postCard.profile_image
+      }" alt="" /></div>
       <div>
-        <h3 class="text-[#12132D] font-bold">Cameron Williamson</h3>
-        <p class="text-[#12132D99] text-sm">Unknown</p>
+        <h3 class="text-[#12132D] font-bold">${postCard.author.name}</h3>
+        <p class="text-[#12132D99] text-sm">${
+          postCard.author.designation || "Unknown"
+        }</p>
       </div>
     </div>
   </div>`;
+
+    latestCardContainer.appendChild(cardDiv);
   });
 }

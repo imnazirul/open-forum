@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +14,106 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header></header>
+  <body class="font-mulish">
+    <header class="container mx-auto px-5 lg:px-24 pt-5 mb-10 lg:mb-20">
+      <!-- navbar starts here -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-3xl font-black text-[#12132D]"
+              >Open Forum</a
+            >
+          </div>
 
-    <main></main>
+          <div class="navbar-end flex gap-5">
+            <div class="flex gap-3">
+              <a title="Home" href="#"
+                ><img src="./images/icons/Frame 2.png" alt=""
+              /></a>
+              <a title="Edit" href="#"
+                ><img src="./images/icons/Frame 3.png" alt=""
+              /></a>
+              <a title="Add" href="#"
+                ><img src="./images/icons/Frame 4.png" alt=""
+              /></a>
+              <a title="Flag" href="#"
+                ><img src="./images/icons/Frame 5.png" alt=""
+              /></a>
+            </div>
+            <a
+              class="btn bg-[#797DFC] text-white rounded-3xl px-8 hover:text-black"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner starts here -->
+      <div
+        class="bg-[url(./images/bg.png)] h-[500px] bg-cover flex justify-between items-center relative overflow-hidden"
+      >
+        <img
+          class="absolute bottom-0 w-full"
+          src="./images/bgbanner.png"
+          alt=""
+        />
+        <div class="mx-20 my-16 space-y-5 z-10 flex-1">
+          <h1 class="text-white text-6xl">
+            Welcome to the <br /><span class="text-[#7B7DFCFF]">Open</span>Forum
+          </h1>
+          <p></p>
+          <div class="bg-white flex justify-between rounded-3xl">
+            <input
+              class="px-4 w-full rounded-3xl outline-none"
+              id="searchinput"
+              type="text"
+              placeholder="Search here anything"
+            />
+            <button
+              class="btn bg-[#797DFC] text-white rounded-3xl px-8 hover:text-black"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-white mx-20 my-16 px-10 z-10 lg:w-[30%] rounded-3xl py-8 text-[#12132D] text-xl"
+        >
+          <div class="">
+            <div class="flex justify-between mb-2">
+              <p>Registered User</p>
+              <p>01</p>
+            </div>
+            <div class="flex justify-between mb-2">
+              <p>Forum</p>
+              <p>05</p>
+            </div>
+            <div class="flex justify-between mb-2">
+              <p>Topics</p>
+              <p>01</p>
+            </div>
+            <div class="flex justify-between mb-2">
+              <p>Replies</p>
+              <p>01</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- discuss section -->
+      <section class="container mx-auto px-5 lg:px-24 mb-10 lg:mb-20">
+        <h1 class="text-3xl font-black text-[#12132D] text-center mb-5">
+          Let’s Discuss
+        </h1>
+        <p class="text-[#12132D] text-lg max-w-2xl mx-auto text-center">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </section>
+    </main>
 
     <footer></footer>
   </body>

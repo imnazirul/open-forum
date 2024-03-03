@@ -63,7 +63,7 @@
           alt=""
         />
         <div class="m-5 lg:mx-20 lg:my-16 space-y-5 z-10 flex-1">
-          <h1 class="text-white text-4xl lg:text-6xl">
+          <h1 class="text-white font-semibold text-4xl lg:text-6xl">
             Welcome to the <br /><span class="text-[#7B7DFCFF]">Open</span>
             Forum
           </h1>
@@ -77,12 +77,15 @@
               type="text"
               placeholder="Search here anything"
             />
+
             <button
+              id="search-btn"
               class="btn bg-[#797DFC] text-white rounded-3xl px-8 hover:text-black"
             >
               Search
             </button>
           </div>
+          <p id="error-message" class="text-red-600"></p>
         </div>
 
         <div
@@ -121,7 +124,7 @@
           with the community. Let's discuss topics together.
         </p>
 
-        <div class="flex flex-col lg:flex-row gap-5 items-start">
+        <div class="flex flex-col lg:flex-row gap-5 lg:items-start">
           <!-- card container -->
           <div id="discuss-card-container" class="flex flex-col gap-3">
             <!-- card1 -->
@@ -302,7 +305,7 @@
 
       <hr class="w-full h-[2px] bg-[#30325E1A]" />
 
-      <p class="text-[#12132D80] text-lg">&copy; 2017, All Rights Reserved.</p>
+      <p class="text-[#12132D80] text-lg">&copy; 2024, All Rights Reserved.</p>
     </footer>
 
     <script src="./script.js"></script>
